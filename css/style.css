@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+@font-face {
+    font-family: Urzeit;
+    src: url(../fonts/UrzeitPersonalUse-p7rPa.ttf);
+}
+
+@font-face {
+    font-family: RamonaLight;
+    src: url(../fonts/Ramona-Light.ttf);
+}
+
+@font-face {
+    font-family: RamonaBold;
+    src: url(../fonts/Ramona-Bold.ttf);
+}
+
+.header {
+    background-image: url(../img/trekking-g97050b112_1920.jpg);
+    height: 1000px;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 50px 50px rgba(0, 0, 0, 0.4);
+}
+
+.navList {
+    display: flex;
+    column-gap: 20px;
+}
+
+.link {
+    font-family: RamonaBold;
+    color: white;
+    font-size: 30px;
+}
+
+.navLink {
+    box-sizing: unset;
+    border-bottom: 0px solid white;
+}
+
+.navLink:hover a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    transition: .3s;
+}
+
+.logo {
+    font-family: Urzeit;
+    font-size: 64px;
+    color: white;
+}
+
+.nav {
+    padding: 30px 100px;
+}
+
+
+/* Промо в шапке */
+
+.headerPromo {
+    padding: 200px 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.promoGlav {
+    font-family: RamonaBold;
+    font-size: 64px;
+    color: #878532;
+}
+
+.promoTxt {
+    font-family: RamonaLight;
+    font-size: 30px;
+    color: #878532;
+}
+
+.promoBut {
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-family: RamonaBold;
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    color: #878532;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+}
+
+.promoBut:hover {
+    background-color: #878532;
+    color: white;
+    transition: .3s;
+}
+
+
+/* Бронирование */
+
+.bron {
+    position: relative;
+}
+
+.bronGlav {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    font-family: RamonaBold;
+    font-size: 64px;
+    color: #878532;
+    z-index: 2;
+}
+
+.bronAnim {
+    width: 100%;
+    left: 0;
+    height: 1000px;
+}
+
+.lineBut {
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-family: RamonaBold;
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    background-color: #878532;
+    height: 150px;
+    font-family: RamonaBold;
+    font-size: 64px;
+    color: white;
+    line-height: 150px;
+}
+
+.bronAnim {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    transition: .3s;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.slide img {
+    z-index: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.arrow {
+    font-family: RamonaBold;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #878532;
+    transition: .3s;
+}
+
+#leftArrow {
+    left: 50px;
+    top: 50%;
+}
+
+#rightArrow {
+    right: 50px;
+    top: 50%;
+}
+
+.infoSlide {
+    position: absolute;
+    z-index: 1;
+    padding: 150px 350px;
+    top: 0;
+    left: 0;
+}
+
+.glav {
+    font-family: RamonaBold;
+    font-size: 64px;
+    color: white;
+}
+
+.bronForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: RamonaLight;
+    border: 0;
+}
+
+.inputIn {
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.input:focus-visible {
+    color: #878532;
+    outline: 0;
+}
+
+.inputCol {
+    border-bottom: 1px solid white;
+}
+
+
+/* Блок акций */
+
+.sales {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 50px;
+}
+
+.salesBlock {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.salesImg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 350px;
+    min-height: 300px;
+    max-height: 450px;
+    border: 2px solid #878532;
+    border-radius: 25px;
+}
+
+.salesGlav {
+    font-family: RamonaBold;
+    font-size: 64px;
+    color: #878532;
+    text-align: center;
+}
+
+.salesItem {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.salesTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    font-family: RamonaLight;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background: #878532;
+    border-radius: 0 0 25px 25px;
+}
+
+.salesBut {
+    padding: 10px;
+    border: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    border-radius: 15px;
+    font-family: RamonaBold;
+    font-size: 28px;
+    color: white;
+}
+
+.salesBut:hover {
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.salesTime {
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: 2px solid white;
+    font-family: RamonaLight;
+    border-radius: 10px;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+}
+
+.salesTime2 {
+    position: relative;
+    margin-top: 15px;
+    margin: -5px;
+    font-family: RamonaLight;
+    color: white;
+    padding: 5px;
+    background-color: #878532;
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* Подписка */
+
+.subscribe {
+    padding: 50px 350px;
+    background-image: url(../img/hiker-g4bbaacc0d_1920.jpg);
+    height: 650px;
+}
+
+.subscribeForm {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 300px;
+}
+
+.footerGlav {
+    border-radius: 15px;
+    font-family: RamonaBold;
+    font-size: 54px;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: #878532;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footList {
+    display: flex;
+    column-gap: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.footLink {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}

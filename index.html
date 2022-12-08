@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>TouristPRO</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                TouristPRO
+            </a>
+            <ul class="navList">
+                <li class="navLink">
+                    <a href="#" class="link">
+                        Акции
+                    </a>
+                </li>
+                <li class="navLink">
+                    <a href="#" class="link">
+                        Управление бронированием
+                    </a>
+                </li>
+                <li class="navLink">
+                    <a href="#" class="link">
+                        О нас
+                    </a>
+                </li>
+            </ul>
+            <span class="link">
+                Поиск
+            </span>
+        </nav>
+        <div class="headerPromo">
+            <h2 class="promoGlav">
+                Шесть шагов к мечте
+            </h2>
+            <p class="promoTxt">
+                Наша цель - сделать любой поход удобным, комфортным и безопасным! <br> Исполнять мечты просто!
+            </p>
+            <buuton class="promoBut">
+                Подробнее
+            </buuton>
+        </div>
+    </header>
+    <section class="line">
+        Подберем для вас лучший маршрут!
+        <button class="lineBut">
+            Подробнее
+        </button>
+    </section>
+    <section class="bron">
+        <h2 class="bronGlav">
+            Бронирование поездки
+        </h2>
+        <span class="arrow" id="leftArrow" onclick="minus()">
+            <
+        </span>
+        <div class="bronAnim">
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.2
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.3
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.4
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.5
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.6
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gc61bbda24_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        1.7
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-gbf20fa773_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        2
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/man-ged23a663b_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        3
+                    </h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/mckenzie-river-g84dc3eb01_1920.jpg" alt="">
+                <div class="infoSlide">
+                    <h2 class="glav">
+                        4
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <form class="bronForm">
+            <label class="input">Регион:
+                <select class="input inputIn">
+                    <option value="" selected disabled>Выберите регион...</option>
+                    <option value="">Карелия</option>
+                    <option value="">Хибины</option>
+                    <option value="">Алтай</option>
+                    <option value="">Камчатка</option>
+                </select>
+            </label>
+            <label class="input">
+                Отбытие:
+                <input type="date" class="input inputIn">
+            </label>
+            <label class="input">
+                Прибытие:
+                <input type="date" class="input inputIn">
+            </label>
+            <label class="input">
+                Кол-во учатсников:
+                <input type="text" class="input inputIn" id="inputCol">
+            </label>
+            <label class="input">Уровень:
+                <select class="input inputIn">
+                    <option value="" selected disabled>Выберите уровень...</option>
+                    <option value="">Начальный</option>
+                    <option value="">Средний</option>
+                    <option value="">Эксперт</option>
+                </select>
+            </label>
+            <input type="button" class="input" value="Записаться">
+        </form>
+        <span class="arrow" id="rightArrow" onclick="plus()">
+            >
+        </span>
+    </section>
+    <section class="sales">
+        <h2 class="salesGlav">
+            Доступные акции!
+        </h2>
+        <div class="salesBlock">
+            <div class="salesItem">
+                <p class="salesTime">
+                    26
+                    <span class="salesTime2">
+                        days
+                    </span>
+                </p>
+                <img src="img/jeans-gf4b9d7f6f_1920.jpg" alt="" class="salesImg">
+                <p class="salesTxt">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum mollitia ipsam, non hic molestiae itaque distinctio quaerat quos ullam nisi.
+                    <button class="salesBut">
+                        Подробнее
+                    </button>
+                </p>
+            </div>
+            <div class="salesItem">
+                <p class="salesTime">
+                    26
+                    <span class="salesTime2">
+                        days
+                    </span>
+                </p>
+                <img src="img/image/promo_3.jpg" alt="" class="salesImg">
+                <p class="salesTxt">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum mollitia ipsam, non hic molestiae itaque distinctio quaerat quos ullam nisi.
+                    <button class="salesBut">
+                        Подробнее
+                    </button>
+                </p>
+            </div>
+            <div class="salesItem">
+                <p class="salesTime">
+                    26
+                    <span class="salesTime2">
+                        days
+                    </span>
+                </p>
+                <img src="img/trail-running-g7d7d9cd34_1920.jpg" alt="" class="salesImg">
+                <p class="salesTxt">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum mollitia ipsam, non hic molestiae itaque distinctio quaerat quos ullam nisi.
+                    <button class="salesBut">
+                        Подробнее
+                    </button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="line">
+        Сделаем ваш день лучше!
+        <button class="lineBut">
+            Подробнее
+        </button>
+    </section>
+    <section class="subscribe">
+        <h2 class="glav">
+            Оформление подписки
+        </h2>
+        <form action="" class="subscribeForm">
+            <label class="input">
+                E-mail:
+                <input type="text" class="input inputIn" id="inputCol">
+            </label>
+            <input type="button" class="input" value="Записаться">
+        </form>
+    </section>
+    <footer class="footer">
+        <p class="footerGlav">
+            8 (800) 555-33-10
+        </p>
+        <ul class="footList">
+            <li class="footLink">Home</li> |
+            <li class="footLink">Login</li>|
+            <li class="footLink">Sign up</li>|
+            <li class="footLink">Contact</li>|
+            <li class="footLink">News</li>|
+            <li class="footLink">Return</li>|
+            <li class="footLink">Feedback</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
