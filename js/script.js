@@ -35,7 +35,7 @@ function AutoSlider() {
     if (radio.checked) {
         console.log(1);
         radio.setAttribute("checked", "checked")
-        timerId = setInterval(() => plus(), 2000);
+        timerId = setInterval(() => plus(), 8000);
     }
     else {
         clearInterval(timerId);
