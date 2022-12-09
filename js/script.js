@@ -26,3 +26,20 @@ function minus() {
     slider = document.querySelector('.bronAnim')
     slider.style.left = summary + '%';
 }
+
+
+function AutoSlider() {
+    let timerId = 1;
+    document.getElementById('auto').classList.toggle('checked');
+    let radio = document.getElementById('autoRadio')
+    if (radio.checked) {
+        console.log(1);
+        radio.setAttribute("checked", "checked")
+        timerId = setInterval(() => plus(), 2000);
+    }
+    else {
+        clearInterval(timerId);
+        console.log(2);
+        radio.removeAttribute("checked")
+    }
+}
