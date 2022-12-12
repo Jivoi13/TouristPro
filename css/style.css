@@ -52,19 +52,24 @@ body {
 
 .navLink {
     box-sizing: unset;
-    border-bottom: 0px solid white;
 }
 
 .navLink:hover a {
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     border-bottom: 1px solid white;
-    transition: .3s;
+    /* transition: .2s; */
 }
 
 .logo {
     font-family: Urzeit;
     font-size: 64px;
     color: white;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transition: 0.2s;
+    color: #878532;
 }
 
 .nav {
@@ -104,12 +109,13 @@ body {
     color: #878532;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
+    transition: .2s;
 }
 
 .promoBut:hover {
     background-color: #878532;
     color: white;
-    transition: .3s;
+    transition: .2s;
 }
 
 
@@ -144,8 +150,14 @@ body {
     width: 250px;
     text-align: center;
     color: white;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.0);
     border: 2px solid white;
+    transition: 0.2s;
+}
+
+.lineBut:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .line {
@@ -166,7 +178,7 @@ body {
     display: flex;
     width: 100%;
     height: 800px;
-    transition: .3s;
+    transition: .2s;
 }
 
 .slide {
@@ -189,6 +201,7 @@ body {
     position: absolute;
     z-index: 1;
     cursor: pointer;
+    transition: .2s;
 }
 
 .radio {
@@ -202,7 +215,7 @@ body {
 .autoSlide {
     user-select: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 
     display: flex;
     flex-direction: row;
@@ -213,7 +226,7 @@ body {
     font-size: 24px;
     color: white;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.2;
     right: 30px;
     bottom: 20px;
     z-index: 1;
@@ -221,11 +234,11 @@ body {
 
 .autoSlide:hover {
     opacity: 1;
-    transition: .3s;
+    transition: .2s;
 }
 
 .checked {
-    transition: 0.3s;
+    transition: 0.2s;
     opacity: 1;
 }
 
@@ -237,7 +250,7 @@ body {
 
 .arrow:hover {
     color: #878532;
-    transition: .3s;
+    transition: .2s;
 }
 
 #leftArrow {
@@ -276,12 +289,13 @@ body {
 .input {
     padding: 10px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
     font-size: 18px;
     font-family: RamonaLight;
     border: 0;
+    cursor: pointer;
 }
 
 .inputIn {
@@ -367,11 +381,13 @@ body {
     font-family: RamonaBold;
     font-size: 28px;
     color: white;
+    transition: .2s;
+    cursor: pointer;
 }
 
 .salesBut:hover {
-    transition: .3s;
-    background-color: rgba(255, 255, 255, 0.3);
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .salesTime {
@@ -425,6 +441,7 @@ body {
     font-size: 54px;
     color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 .footer {
